@@ -25,9 +25,9 @@
 <p><b>java -jar target/spring-boot-rabbitmq-0.0.1-SNAPSHOT.jar</b> 
 <p>then send a request to consumer:
 <p>curl -x localhost:8080 http://localhost:8080/api/vi/rabbitmq/consumer
-<p>finally send a request to the producer:
+<p>then send a request to the producer:
 <p>curl -x localhost:8080 http://localhost:8080/api/vi/rabbitmq/producer
-<p>and checkout the application running will receive the messages every time you execute the sender
+<p>finally checkout the application running will receive the messages every time you execute the sender
   
   
 
