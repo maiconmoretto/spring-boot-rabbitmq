@@ -22,7 +22,7 @@ public class SpringBootRabbitmqController {
 
 	@GetMapping(value = "/producer")
 	public void producer() throws IOException, TimeoutException {
-		sender.send("Hello i am a message ;)");
+		sender.send("Hello i am a message ;) with timestamp : " + System.currentTimeMillis() );
 	}
 		
 	@GetMapping(value = "/consumer")
