@@ -2,7 +2,12 @@
 
 <br><br>
 <p><b>A project with spring boot and rabbitMQ (https://www.rabbitmq.com/)</b>, 
-<p>based on the concept of rabbitMq with  a producer and a consumer,
+<p>based on the core concept of rabbitMq with  a producer, queue and a consumer,
+<p>"A producer is a user application that sends messages.
+<p>A queue is a buffer that stores messages.
+<p>A consumer is a user application that receives messages."
+<p>font: https://www.rabbitmq.com/tutorials/tutorial-three-python.html
+
 <p>there is one api for producer(/api/v1/rabbitmq/consumer) 
 <p>and one for consumer(/api/v1/rabbitmq/consumer)
 <p>i am using rabbitMq with a container in docker --> https://hub.docker.com/_/rabbitmq
