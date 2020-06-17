@@ -9,12 +9,23 @@
 
 <br><br>
 <p><b>to run this project:</b>
+<p>first start the rabbitMQ container:
+<p>after install docker and pull the image from docker hub:
+<p>docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+<p>next  
 <p>if you have maven installed, on root folder run this command:
 <p><b>mvn spring-boot:run</b>
 <p>or
 <p>execute the .jar:
 <p><b>java -jar target/spring-boot-rabbitmq-0.0.1-SNAPSHOT.jar</b> 
+<p>then send a request to consumer:
+<p>curl -x localhost:8080 http://localhost:8080/api/vi/rabbitmq/consumer
+<p>finally send a request to the producer:
+<p>curl -x localhost:8080 http://localhost:8080/api/vi/rabbitmq/producer
+<p>and checkout the application running will receive the messages every time you execute the sender
   
+  
+
 <br><br>
 <p>java --version:
 <p>openjdk 11.0.7 2020-04-14
@@ -24,5 +35,6 @@
 <p>Docker version 19.03.11, build dd360c7
 <p>RabbitMQ version
 <p>3.8.4
-
+<p>linux verson:
+<p>Linux maicon-X450LD 4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
   
